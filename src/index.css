@@ -1,0 +1,28 @@
+
+@import "tailwindcss";
+
+
+
+body {
+    background-color: #111827;
+}
+
+@keyframes borderMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.border-animation {
+    background-size: 200% 200%;
+    animation: borderMove 3s linear infinite;
+}
+
