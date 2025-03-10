@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-    // Get current hour
     const hour = new Date().getHours();
 
-    // Determine greeting based on time
     let greeting = "Good Morning";
     if (hour >= 12 && hour < 17) {
         greeting = "Good Afternoon";
@@ -19,9 +17,9 @@ const Navbar = () => {
             <div className="container mx-auto flex justify-between items-center">
             <h1 className="text-2xl font-bold font-serif">Hello! {greeting}</h1>
                 <div className="flex justify-between items-center space-x-8 font-bold text-2xl">
-                    <Link to="/" className="hover:text-gray-400">Home</Link>
-                    <Link to="/Projectss" className="hover:text-gray-400">Projects</Link>
-                    <Link to="/Contact" className="hover:text-gray-400">Contact</Link>
+                    <Link to="my-portfolio/" className="hover:text-gray-400">Home</Link>
+                    <Link to="my-portfolio/Projectss" className="hover:text-gray-400">Projects</Link>
+                    <Link to="my-portfolio/Contact" className="hover:text-gray-400">Contact</Link>
                 </div>
             </div>
         </nav>

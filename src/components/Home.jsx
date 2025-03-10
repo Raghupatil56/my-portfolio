@@ -16,7 +16,7 @@ const Home = () => {
         </div>
         <div className=" w-1/2 flex justify-center">
           <img
-            src="/Raghu.jpg"
+            src="/my-portfolio/Raghu.jpg"
             alt="Raghavendra Patil"
             className="w-100 h-120 rounded-full drop-shadow-[0px_0px_80px_rgba(255,0,187,0.9)] object-cover"
           />
