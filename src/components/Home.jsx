@@ -8,13 +8,14 @@ const Home = () => {
   const [showAlert, setShowAlert] = useState(false);
 
   useEffect(() => {
-    const checkMobileAndDesktopSite = () => {
+    const checkDesktopSiteMode = () => {
       const isMobile = /Mobi|Android|iPhone|iPad/.test(navigator.userAgent);
       const viewportWidth = window.innerWidth;
       const screenWidth = window.screen.width;
+      const screenHeight = window.screen.height;
 
-      // If the user is on a mobile device and viewport width is less than screen width, they're in mobile view
-      const isDesktopSite = viewportWidth > screenWidth * 0.9; // Allow a small margin
+      // If in "Desktop Site" mode, viewport width will be close to screen width
+      const isDesktopSite = viewportWidth > Math.min(screenWidth, screenHeight) * 0.9;
 
       if (isMobile && !isDesktopSite) {
         setShowAlert(true);
@@ -23,10 +24,14 @@ const Home = () => {
       }
     };
 
-    checkMobileAndDesktopSite();
-    window.addEventListener("resize", checkMobileAndDesktopSite);
+    checkDesktopSiteMode();
+    window.addEventListener("resize", checkDesktopSiteMode);
+    window.addEventListener("orientationchange", checkDesktopSiteMode);
 
-    return () => window.removeEventListener("resize", checkMobileAndDesktopSite);
+    return () => {
+      window.removeEventListener("resize", checkDesktopSiteMode);
+      window.removeEventListener("orientationchange", checkDesktopSiteMode);
+    };
   }, []);
 
   return (
