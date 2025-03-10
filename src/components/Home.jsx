@@ -10,7 +10,11 @@ const Home = () => {
   useEffect(() => {
     const checkMobileAndDesktopSite = () => {
       const isMobile = /Mobi|Android|iPhone|iPad/.test(navigator.userAgent);
-      const isDesktopSite = window.innerWidth >= window.screen.width - 20; // Detects "Desktop Site" mode
+      const viewportWidth = window.innerWidth;
+      const screenWidth = window.screen.width;
+
+      // If the user is on a mobile device and viewport width is less than screen width, they're in mobile view
+      const isDesktopSite = viewportWidth > screenWidth * 0.9; // Allow a small margin
 
       if (isMobile && !isDesktopSite) {
         setShowAlert(true);
