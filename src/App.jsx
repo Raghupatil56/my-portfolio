@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Projectss from "./components/Projectss";
 import Home from "./components/Home";
@@ -22,3 +22,4 @@ function App() {
 }
 
 export default App;
+
