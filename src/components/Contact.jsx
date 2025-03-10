@@ -51,7 +51,7 @@ const Contact = () => {
 
         <p className="text-2xl font-bold">
           <a 
-            href="/raghavendra-s-patil-resume.pdf" 
+            href="/my-portfolio/Raghavendr Patil Resume.pdf" 
             download 
             className="text-white hover:text-3xl ml-2"
           >
