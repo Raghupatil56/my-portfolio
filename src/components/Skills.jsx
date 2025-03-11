@@ -38,23 +38,24 @@ const Skills = () => {
                     <motion.div 
                         key={index} 
                         className="flex justify-center items-center border-3 border-white text-2xl sm:text-3xl font-semibold text-white rounded-xl p-6 sm:p-8 mx-auto w-80 shadow-md"
-                        whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
-                        whileTap={{ scale: 0.9 }}
+                        whileHover={{ scale: 1.1, transition: { duration: 0.2, ease: "easeInOut" } }}
+                        whileTap={{ scale: 0.9, transition: { duration: 0.1 } }}
                         initial={{ opacity: 0, y: 50 }}
                         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
                         transition={{ duration: 0.3, delay: index * 0.07 }}
                     >
                         {skillLinks[skill] ? (
-                            <a 
-                                href={skillLinks[skill]} 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                            >
-                                {skill}
-                            </a>
-                        ) : (
-                            <span>{skill}</span>
-                        )}
+                        <a 
+                            href={skillLinks[skill]} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-white"
+                        >
+                            {skill}
+                        </a>
+                    ) : (
+                        <span>{skill}</span>
+                    )}
                     </motion.div>
                 ))}
             </div>
