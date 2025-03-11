@@ -6,7 +6,7 @@ const Experience = () => {
             timeline: "Feb 2025 - Apr 2025",
             description: (
                 <p>
-                    Currently, I am working as a Data Science Intern at Prodigy Info Tech. I am working on real-world datasets, applying data analysis, machine learning, and visualization techniques. 
+                    Currently, I am working as a Data Science Intern at Prodigy Info Tech. I am working on real-world datasets, applying data analysis, machine learning and visualization techniques. 
                     
                     <br /><br /><strong>Key Projects:</strong>
                     <ul className="list-disc ml-6 mt-2">
@@ -17,7 +17,7 @@ const Experience = () => {
                     </ul>
 
                     <br />
-                    This internship is enhancing my proficiency in Python, data preprocessing, machine learning algorithms, and data visualization using Pandas, NumPy, and Matplotlib. It is also improving my problem-solving and analytical skills, preparing me for industry-level data-driven decision-making.
+                    This internship is enhancing my proficiency in Python, data preprocessing, machine learning algorithms and data visualization using Pandas, NumPy and Matplotlib. It is also improving my problem-solving and analytical skills, preparing me for industry-level data-driven decision-making.
                 </p>
             ),
         },
