@@ -13,7 +13,7 @@ const Home = () => {
         {/* Text Section */}
         <div className="p-7 m-6 w-full md:w-1/2 text-left">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-5">
-            Raghavendra Patil
+            Seema Patil
           </h1>
           <p className="text-lg md:text-xl font-semibold">
             I am an enthusiastic and diligent final-year B.Tech student in Electronics and Communication Engineering, with a strong passion for software development and emerging technologies. 

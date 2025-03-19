@@ -36,9 +36,9 @@ const Navbar = () => {
             {/* Mobile Menu (Appears when menuOpen is true) */}
             {menuOpen && (
                 <div className="md:hidden flex flex-col bg-gray-800 py-4">
-                    <Link to="my-portfolio/" className="py-2 hover:bg-gray-700 text-center" onClick={() => setMenuOpen(false)}>Home</Link>
-                    <Link to="my-portfolio/Projectss" className="py-2 hover:bg-gray-700 text-center" onClick={() => setMenuOpen(false)}>Projects</Link>
-                    <Link to="my-portfolio/Contact" className="py-2 hover:bg-gray-700 text-center" onClick={() => setMenuOpen(false)}>Contact</Link>
+                    <Link to="my-portfolioo/" className="py-2 hover:bg-gray-700 text-center" onClick={() => setMenuOpen(false)}>Home</Link>
+                    <Link to="my-portfolioo/Projectss" className="py-2 hover:bg-gray-700 text-center" onClick={() => setMenuOpen(false)}>Projects</Link>
+                    <Link to="my-portfolio0/Contact" className="py-2 hover:bg-gray-700 text-center" onClick={() => setMenuOpen(false)}>Contact</Link>
                 </div>
             )}
         </nav>
