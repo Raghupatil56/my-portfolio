@@ -34,7 +34,7 @@ const Home = () => {
 
       <Education />
       <Skills />
-      <Experience />
+      {/* <Experience /> */}
       <Projects />
       <Feedback />
     </section>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { FiMenu, FiX } from "react-icons/fi"; // Icons for mobile menu
+import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -17,14 +17,12 @@ const Navbar = () => {
                 {/* Greeting */}
                 <h1 className="text-xl md:text-2xl font-bold font-serif">Hello! {greeting}</h1>
 
-                {/* Desktop Menu */}
                 <div className="hidden md:flex space-x-8 font-bold text-lg">
                     <Link to="my-portfolio/" className="hover:text-gray-400">Home</Link>
                     <Link to="my-portfolio/Projectss" className="hover:text-gray-400">Projects</Link>
                     <Link to="my-portfolio/Contact" className="hover:text-gray-400">Contact</Link>
                 </div>
 
-                {/* Mobile Menu Button */}
                 <button 
                     className="md:hidden text-2xl"
                     onClick={() => setMenuOpen(!menuOpen)}
@@ -33,7 +31,6 @@ const Navbar = () => {
                 </button>
             </div>
 
-            {/* Mobile Menu (Appears when menuOpen is true) */}
             {menuOpen && (
                 <div className="md:hidden flex flex-col bg-gray-800 py-4">
                     <Link to="my-portfolio/" className="py-2 hover:bg-gray-700 text-center" onClick={() => setMenuOpen(false)}>Home</Link>
