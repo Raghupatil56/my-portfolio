@@ -23,19 +23,24 @@ const Education = () => {
     ];
 
     return (
-        <div className="mt-16 w-11/12 mx-auto text-left">
-            <h2 className="text-5xl md:text-6xl font-bold mb-10 text-center">Education</h2>
-            <hr className="w-1/2 mx-auto border-3 border-gray-500 rounded-2xl mt-6 mb-8" />
+        <div className="mt-24 w-11/12 mx-auto text-left">
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-center gradient-text">Education</h2>
+            <div className="w-32 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mx-auto rounded-full mb-12"></div>
             
             {/* Responsive Grid Layout */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {educationDetails.map((edu, index) => (
-                    <div key={index} className="border-4 rounded-2xl p-6 shadow-lg bg-gray-800 text-white">
-                        <p className="text-xl font-semibold">{edu.institution}</p>
-                        <p className="text-lg">{edu.location}</p>
-                        <p className="text-lg font-semibold">{edu.degree}</p>
-                        <p className="text-lg">{edu.duration}</p>
-                        {edu.cgpa && <p className="text-lg font-semibold">{edu.cgpa}</p>}
+                    <div key={index} className="glass-effect rounded-2xl p-6 shadow-2xl text-white card-hover group relative overflow-hidden border border-white/10">
+                        <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>
+                        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div className="absolute -top-20 -right-20 w-40 h-40 bg-purple-500/20 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div className="relative z-10">
+                            <p className="text-xl font-bold text-blue-400 mb-2">{edu.institution}</p>
+                            <p className="text-base text-gray-300 mb-3">{edu.location}</p>
+                            <p className="text-lg font-semibold text-white mb-2">{edu.degree}</p>
+                            <p className="text-base text-gray-400 mb-2">{edu.duration}</p>
+                            {edu.cgpa && <p className="text-lg font-bold text-green-400">{edu.cgpa}</p>}
+                        </div>
                     </div>
                 ))}
             </div>
