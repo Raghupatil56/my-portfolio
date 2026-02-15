@@ -81,7 +81,7 @@ const Experience = () => {
 
     return (
         <div className="mt-24 w-11/12 mx-auto text-left">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-center gradient-text">
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-center text-white">
                 Experience
             </h2>
 
@@ -97,7 +97,7 @@ const Experience = () => {
                         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         <div className="absolute -top-20 -right-20 w-60 h-60 bg-blue-500/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         <div className="relative z-10">
-                            <p className="text-3xl font-bold gradient-text">{exp.company}</p>
+                            <p className="text-3xl font-bold text-white">{exp.company}</p>
                             <p className="text-xl font-semibold mt-2 text-blue-400">{exp.title}</p>
                             <p className="text-base text-gray-400 mt-2 flex items-center">
                                 <span className="inline-block w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>

@@ -57,7 +57,7 @@ const Skills = () => {
 
     return (
         <div ref={ref} className="mt-24 w-11/12 mx-auto text-center">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 gradient-text">Skills</h2>
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-white">Skills</h2>
             <div className="w-32 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mx-auto rounded-full mb-12"></div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">
@@ -65,11 +65,11 @@ const Skills = () => {
                     <motion.div 
                         key={index} 
                         className={`glass-effect flex justify-center items-center text-xl sm:text-2xl font-semibold text-white rounded-2xl p-6 card-hover relative overflow-hidden group cursor-pointer`}
-                        whileHover={{ scale: 1.05, rotate: 2, transition: { duration: 0.2, ease: "easeInOut" } }}
-                        whileTap={{ scale: 0.95, transition: { duration: 0.1 } }}
+                        whileHover={{ scale: 1.05, rotate: 2 }}
+                        whileTap={{ scale: 1.05, rotate: 2 }}
                         initial={{ opacity: 0, y: 50, rotateX: -15 }}
                         animate={isInView ? { opacity: 1, y: 0, rotateX: 0 } : { opacity: 0, y: 50, rotateX: -15 }}
-                        transition={{ duration: 0.4, delay: index * 0.05, type: "spring", stiffness: 100 }}
+                        transition={{ duration: 0.3, delay: index * 0.05, type: "spring", stiffness: 100 }}
                     >
                         <div className={`absolute inset-0 bg-gradient-to-br ${gradients[index % gradients.length]} opacity-0 group-hover:opacity-20 transition-opacity duration-300`}></div>
                         {skillLinks[skill] ? (

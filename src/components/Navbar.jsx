@@ -15,7 +15,7 @@ const Navbar = () => {
         <nav className="glass-effect text-white p-4 fixed w-full top-0 left-0 z-50 border-b border-white/10">
             <div className="container mx-auto flex justify-between items-center">
                 {/* Greeting */}
-                <h1 className="text-xl md:text-2xl font-bold font-serif gradient-text">Hello! {greeting}</h1>
+                <h1 className="text-xl md:text-2xl font-bold font-serif text-white">Hello! {greeting}</h1>
 
                 <div className="hidden md:flex space-x-8 font-bold text-lg">
                     <Link to="my-portfolio/" className="hover:text-purple-400 transition-colors duration-300 relative group">

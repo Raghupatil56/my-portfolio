@@ -24,7 +24,7 @@ const Education = () => {
 
     return (
         <div className="mt-24 w-11/12 mx-auto text-left">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-center gradient-text">Education</h2>
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-center text-white">Education</h2>
             <div className="w-32 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mx-auto rounded-full mb-12"></div>
             
             {/* Responsive Grid Layout */}

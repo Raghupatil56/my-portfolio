@@ -13,7 +13,7 @@ const Feedback = () => {
 
     return (
         <div className="flex flex-col items-center text-center px-4 py-16">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6 gradient-text text-shadow-glow">Message Me</h2>
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white">Message Me</h2>
             <div className="w-32 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mx-auto rounded-full mb-6"></div>
             <h4 className="text-lg md:text-xl text-gray-300 mb-8">Submit the form below to get in touch with me</h4>
 

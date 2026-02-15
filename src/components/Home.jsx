@@ -12,7 +12,7 @@ const Home = () => {
         
         {/* Text Section */}
         <div className="p-8 w-full md:w-1/2 text-left">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 gradient-text animate-fade-in">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white">
             Raghavendra Patil
           </h1>
 

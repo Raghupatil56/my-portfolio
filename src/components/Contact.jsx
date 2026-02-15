@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Contact = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen text-white text-center px-4 py-20">
-      <h2 className="text-5xl md:text-6xl font-bold mb-6 gradient-text">Contact Me</h2>
+      <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white">Contact Me</h2>
       <div className="w-32 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mx-auto rounded-full mb-12"></div>
 
       {/* Contact Details */}
